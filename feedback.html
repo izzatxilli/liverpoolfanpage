@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feedback</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 16
+}
+
+.header {
+  padding: 30px;
+  height:200px;
+  text-align: center;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+  width:100%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+
+.navbar a {
+  height: 50px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color:red;
+  color: black;
+}
+
+
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+}
+
+top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="header">
+<h1 style="color: white; font-family: roboto; "><i>LIVERPOOL SUPPORTERS</i></h1>
+  </div>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="history.html" >History</a>
+  <a href="team.html">Team</a>
+  <a href="shop.html">Kits</a>
+  <a class="active"  href="feedback.html">Fans</a>
+ 
+</div>
+
+<div class="row">
+  <div class="side">
+    
+   
+    <center> <img src="fans.jpg" style="width:1000; "></center>
+    <br>
+    <center><fieldset style="width:1000px; " ><p style="font-family: Arial; font-size:20px;">Liverpool fans often refer to themselves as Kopites, a reference to the fans who once stood, and now sit, on the Kop at Anfield. In 2008 a group of fans decided to form a splinter club, A.F.C.Liverpool Football Club has over 300 Official LFC Supporters Clubs (OLSCs) in over 90 countries worldwide. Our Official LFC Supporters Clubs provide a valuable service to loyal Liverpool Football Club supporters living in the local area. The Supporters Clubs also provide an excellent way of meeting fellow supporters who are devoted to following Liverpool Football Club, wherever they live in the World.</p></fieldset></center>
+   
+   
+  </div>
+  <div class="main">
+<center><h1>Feedback And Opinion</h1></center>
+
+
+<center><fieldset style="width:10px;" >
+<table style="font-size:15px; " >
+
+
+<form>
+<legend><b>Fans Information</b>
+</legend>
+<tr>
+<td>First Name:</td>
+<td><input type="text">
+</td>
+<td>Phone:</td>
+<td><input type="tel" ="phone"></td>
+</tr>
+
+<tr>
+<td>Last Name:</td>
+<td><input type="text" name="lastName"></td>
+<td>Email :</td>
+<td><input type="email" name="email" ></td>
+</tr>
+
+<tr>
+<td>Personal Opinion</td>
+<td><textarea rows="10" cols="40" ></textarea></td>
+
+
+<tr>
+<td>Gender:</td>
+<td><input type="radio" value="gender" name="Male" checked>Male</input></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="radio" value="gender" name="Female">Female</input></td>
+</tr>
+
+<tr>
+</tr>
+
+<tr>
+
+<tr></tr>
+
+ <td colspan="4"><center><button type="submit" value="submit" name="save" onclick="alert('Done')" ">Send</button></center></td>
+ </tr>
+
+</table>
+</fieldset></center>
+
+
+
+
+</form>
+</fieldset>
+</table>
+
+	
+   
+  </div>
+</div>
+
+<div class="footer">
+  <p style="color:white;"><b>Credit to:Liverpool.com</b></p>
+  <p style="color:white;">For study purpose only</p> 
+</div>
+
+</body>
+</html>
